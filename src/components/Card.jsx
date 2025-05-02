@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Addloc from "./Addloc.jsx";
 import './Card.css'
+import Postmodal from "../model/Postmodal.jsx";
 
 // https://placehold.co/300x200?text=Hawaii
 export default function Card() {
@@ -31,6 +32,7 @@ export default function Card() {
     return(
         <div className="card-Line">
             <Addloc cardList={cardList} setCard={setCard}/>
+            <Postmodal />
             <div className="card-div">
                 <div className="mainContentDiv">
                     <h4>인기 여행지</h4>

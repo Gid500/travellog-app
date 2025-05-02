@@ -79,7 +79,8 @@ export default function Addloc({cardList, setCard}) {
                     <label htmlFor="rating"><span>평점(1-5)</span></label>
                     <div className="input-div-div">
                         <input onChange={handleonchange5} onClick={handleonchange4} value={rating} id="rating" type={"range"} min={"1"} max={"5"}
-                        />{rating}
+                        />
+                        <span>{rating}</span>
                     </div>
                 </div>
 
