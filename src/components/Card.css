@@ -1,0 +1,107 @@
+.card-Line{
+  background-color: #f0f0f0;
+}
+
+.addLoc{
+  border-radius: 10px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  box-shadow: 2px 0px #3f3f3f;
+}
+
+.mainContentDiv{
+  width: 95%;
+  text-align: start;
+  margin: 10px auto;
+}
+
+.card-div{
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+}
+
+.input-div .input-div-div,input,textarea,label{
+  width: 95%;
+  display: block;
+  margin : 0 auto;
+}
+
+.input-div input,textarea{
+  padding: 5px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.input-div #rating{
+  display: inline-block;
+  margin-right: 5px;
+  width: 95%;
+}
+
+.button-div{
+  width: 95%;
+  height: 70px;
+  margin: auto;
+}
+
+.button-div button{
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+
+.locName,.info,.rating{
+  margin: 5px auto;
+  width: 90%;
+  text-align: start;
+}
+
+.info{
+  color: black;
+  font-size: 12px;
+}
+
+.addLocH3{
+  padding: 5px 0;
+  padding-top: 20px;
+  margin: auto;
+  width: 95%;
+  color: rgb(50, 150, 220);
+}
+
+.rating{
+  color: #e4c020;
+}
+
+.locName{
+  color: rgb(50, 150, 220);
+  margin: 15px auto;
+}
+
+.card-layer{
+  border-radius: 10px;
+  box-shadow: 5px 0px 5px #111111;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 300px;
+  text-align: center;
+}
+
+.card-list{
+  text-align: start;
+  margin: auto;
+  max-width: 960px;
+}
+
+.travelImg{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}

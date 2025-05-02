@@ -1,0 +1,11 @@
+.Header-Wrapper{
+    background-color: cornflowerblue;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.Header-Text{
+    margin-left: 20px;
+}
