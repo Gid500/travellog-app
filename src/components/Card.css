@@ -29,6 +29,10 @@
   margin : 0 auto;
 }
 
+.input-div-div span {
+  vertical-align: 10%;
+}
+
 .input-div #locName,#imgUrl,#infoText{
   padding: 5px;
   width: 94%;
@@ -56,15 +60,18 @@
   border-radius: 5px;
 }
 
-.locName,.info,.rating{
+.locName,.info,.rating,.addLocH3,.viewCnt{
   margin: 5px auto;
   width: 90%;
   text-align: start;
 }
 
 .info{
-  color: black;
   font-size: 12px;
+}
+
+.viewCnt > span{
+  font-size: 14px;
 }
 
 .addLocH3{
@@ -91,7 +98,11 @@
   display: inline-block;
   vertical-align: text-top;
   width: 300px;
-  text-align: center;
+  background-color: white;
+}
+
+.card-layer:hover{
+  box-shadow: 5px 0px 5px #00b7ff;
 }
 
 .card-list{
@@ -100,8 +111,25 @@
   max-width: 960px;
 }
 
-.travelImg{
+.locationImg{
   width: 300px;
   height: 200px;
   border-radius: 10px 10px 0 0;
+}
+
+.modal-btnWrap{
+  margin: 5px 15px;
+}
+
+.modal-btnWrap button{
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal-btnWrap button:hover{
+  background-color: aquamarine;
+  cursor: pointer;
 }
