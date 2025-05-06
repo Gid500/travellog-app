@@ -11,6 +11,9 @@
 }
 
 .mainContentDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 95%;
   text-align: start;
   margin: 10px auto;
@@ -102,7 +105,7 @@
 }
 
 .card-layer:hover{
-  box-shadow: 5px 0px 5px #00b7ff;
+  box-shadow: 5px 0px 5px #156ec2;
 }
 
 .card-list{

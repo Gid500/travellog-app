@@ -58,8 +58,8 @@ export default function Addloc({cardList, setCard, viewCount}) {
             viewCount       :   viewCount   ,
         };
 
-        console.log(`새 카드: ${JSON.stringify(newCard)}`);
         setCard([...cardList, newCard]);
+        console.log(`새 카드: ${JSON.stringify([...cardList, newCard])}`);
     };
 
     return(
