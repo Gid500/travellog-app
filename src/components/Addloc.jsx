@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import AddLocName from "./AddLocName";
+import ImgUrl from "./ImgUrl";
+import InfoText from "./InfoText";
+import Rating from "./Rating";
 
-export default function Addloc({cardList, setCard, viewCount}) {
+export default function Addloc({cardLists, setCardLists, viewCount}) {
     let temp = '';
 
     const [inputs, setInputs] = useState({
@@ -58,45 +62,34 @@ export default function Addloc({cardList, setCard, viewCount}) {
             viewCount       :   viewCount   ,
         };
 
-        setCard([...cardList, newCard]);
-        console.log(`새 카드: ${JSON.stringify([...cardList, newCard])}`);
+        setCardLists([...cardLists, newCard]);
+        console.log(`새 카드: ${JSON.stringify([...cardLists, newCard])}`);
     };
 
     return(
         <div className="addLoc-wapper">
             <form className="addLoc" onSubmit={handleSubmit}>
 
-                <div className="input-div">
-                    <h3 className="addLocH3">새로운 여행지 추가</h3>
-                    <label htmlFor="locName"><span>여행지 이름</span></label>
-                    <input onChange={handleChange} value={locationName} name="locationName" type="text" placeholder="예: 파리"/>
-                </div>
+                <AddLocName 
+                    handleChange={handleChange} 
+                    locationName={locationName}
+                />
 
-                <div className="input-div">
-                    <label htmlFor="imgUrl"><span>이미지 URL (선택사항)</span></label>
-                    <input onChange={handleChange} value={imgUrl} name="imgUrl" type="text" placeholder="https://example.com/image.jpg"/>
-                </div>
+                <ImgUrl
+                    handleChange={handleChange}
+                    imgUrl={imgUrl}
+                />
 
-                <div className="input-div">
-                    <label htmlFor="infoText"><span>설명</span></label>
-                    <textarea onChange={handleChange}
-                     value={infoText}
-                      name="infoText"
-                       placeholder="이 여행지에 대한 설명을 작성하세요">
-                    </textarea>
-                </div>
+                <InfoText
+                    handleChange={handleChange}
+                    infoText={infoText}
+                />
 
-                <div className="input-div">
-                    <label htmlFor="rating"><span>평점(1-5)</span></label>
-                    <div className="input-div-div">
-                        <input onChange={handleRating}
-                         onClick={handleStarts}
-                          value={rating} id="rating" 
-                          type={"range"} min={"1"} max={"5"}
-                        />
-                        <span>{rating}</span>
-                    </div>
-                </div>
+                <Rating
+                    rating={rating}
+                    handleRating={handleRating}
+                    handleStarts={handleStarts}
+                />
 
                 <div className="button-div">
                     <button type="submit">여행지 추가</button>
