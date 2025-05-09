@@ -1,5 +1,7 @@
 export const viewCount = 0;
 
+export const category = ['아메리카', '유럽', '아시아', '아프리카', '오세니아'];
+
 export const cardList = [
     {id: 1, 
     imgUrl: 'https://placehold.co/300x200?text=Hawaii',

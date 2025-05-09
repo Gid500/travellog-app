@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
-import { cardList } from '../data/Locations';
 
 export default function CardList({cardLists, setpostIdx, setModal}) {
-
     const modalHandler = () => {
         setModal(true);
     }
@@ -32,9 +29,10 @@ export default function CardList({cardLists, setpostIdx, setModal}) {
                     </p>
                     <div className="modal-btnWrap">
                         <button type="button" 
-                            onClick={() => {
-                                visit(idx)
-                            }}>상세정보</button>
+                        onClick={() => {
+                            visit(idx)
+                        }}
+                        >상세정보</button>
                     </div>
                 </div>
             ))}

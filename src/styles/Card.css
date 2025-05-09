@@ -26,14 +26,20 @@
   text-align: center;
 }
 
-.input-div .input-div-div,input,textarea,label{
+.input-div .input-div-div,label{
   width: 95%;
   display: block;
   margin : 0 auto;
 }
 
+.input-div input,textarea{
+  width: 94%;
+  display: block;
+  margin : 0 auto;
+}
+
 .input-div-div span {
-  vertical-align: 10%;
+  vertical-align: 15%;
 }
 
 .input-div #locName,#imgUrl,#infoText{

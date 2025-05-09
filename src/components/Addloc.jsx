@@ -4,7 +4,7 @@ import ImgUrl from "./ImgUrl";
 import InfoText from "./InfoText";
 import Rating from "./Rating";
 
-export default function Addloc({cardLists, setCardLists, viewCount}) {
+export default function Addloc({cardLists, setCardLists, viewCount, categorys}) {
     let temp = '';
 
     const [inputs, setInputs] = useState({
@@ -34,7 +34,6 @@ export default function Addloc({cardLists, setCardLists, viewCount}) {
             ...inputs,
             [name]: value,
         });
-        addStar();
     };
 
     const handleStarts = (e) => {
@@ -48,7 +47,7 @@ export default function Addloc({cardLists, setCardLists, viewCount}) {
 
     function handleSubmit(e){
         e.preventDefault();
-        addCard(locationName, imgUrl, stars, rating, infoText, viewCount);
+        addCard(locationName, imgUrl, stars, rating, infoText, viewCount, categorys);
     };
 
     const addCard = () => {
@@ -60,6 +59,7 @@ export default function Addloc({cardLists, setCardLists, viewCount}) {
             rating          :   rating      ,
             info            :   infoText    ,
             viewCount       :   viewCount   ,
+            category        :   ''   ,
         };
 
         setCardLists([...cardLists, newCard]);
